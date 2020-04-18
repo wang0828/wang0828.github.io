@@ -1,0 +1,15 @@
+.logo h1 {
+    background-image: url(https://www.runoob.com/wp-content/themes/runoob/assets/img/runoob-logo.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    width: 258px;
+    height: 39px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: block;
+}
+.logo a {
+    width: 258px;
+    height: 39px;
+    display: block;
+}
