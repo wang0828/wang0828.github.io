@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+    <script src="./js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{ message1 }}
+        <span v-bind:title="message">鼠标悬停</span>
+    </div>
+</body>
+
+
+</html>
+
+<!-- https://www.imooc.com/learn/980 -->
+<script> 
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message1: 'Hello Vue!',
+            message: '页面加载于' + new Date().toLocaleString()
+        }
+    })
+</script>
