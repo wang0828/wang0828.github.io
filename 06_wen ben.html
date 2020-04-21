@@ -23,7 +23,7 @@
             font-style: italic;
             /* 行高 */
             line-height: 200px;
-            /* 字体整体设计 字重 风格 大小/行高 字族(风格可以省略) */
+            /* 字体整体设计 字重 风格 大小/行高 字族(风格可以省略)  *********/
             font: 100 normal 40px/200px "STsong";
         }
         i{
@@ -31,9 +31,38 @@
             font-style: normal;
         }
     </style>
+    <style type="text/css">
+        .wrapper{
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+        }
+        .w2{
+            width: 400px;
+            /* 水平居中  center left right*/
+            /* text-align: center; */
+            /* 字划线  overline line-through underline*/
+            text-decoration:overline;
+            /* 字间距 */
+            letter-spacing: 2px;
+            /* 词间距 */
+            word-spacing: 5px;
+            /* 缩进 1em相当于一个字的宽度 */
+            text-indent: 2em;
+        }
+
+        a{
+            /* 取消划线 */
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div class="box uu">普通文本</div>
     <i>i的文本</i>
+    <div class="wrapper">一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三一二三</div>
+    <hr>
+    <div class="div wrapper w2">hello world hello world</div>
+    <a href="">链接标签</a>
 </body>
 </html>
