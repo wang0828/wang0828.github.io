@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基础选择器</title>
+    <style type="text/css">
+        /* div 标签名  标签选择器 :开发过程中尽可能少的运用，运用范围为最内层的显示层*/
+        /* dd  class名 类选择器  布局的主力军*/
+        /* d   ID名    id选择器   唯一*/
+        /* *   通配选择器 html body下所有用于显示内容的标签 */
+        /* 三种选择器有优先级 id选择器> 类选择器 >标签选择器> 通配选择器*/
+        /* 标签选择器 标签名 */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+        /* 类选择器：.类名{} */
+        .dd{
+            background-color: black;
+        }
+        /* ID选择器: #ID名{} */
+        #d{
+            background-color: brown;
+        }
+</style>
+<style>
+    .div{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+    }
+    /* 多类名：类名与类名之间不能用任何符号隔断 */
+    .div.red{
+        background-color: cadetblue;
+    }
+</style>
+</head>
+<body>
+    <!-- 选择器：css选择html标签的一个工具  将css与html建立起联系，那么css就可以控制html样式 -->
+    <!-- 选择器其实就是给html标签起名字 -->
+    <div></div>
+    <div class="dd"></div>
+    <div class="dd" id="d"></div>
+
+    
+    <div class="div"></div>
+    <div class="div red"></div>
+    <div class="div"></div>
+</body>
+</html>

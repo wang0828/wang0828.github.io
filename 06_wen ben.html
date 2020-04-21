@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本样式操作</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rosybrown;
+        }
+        /* 字体样式 */
+        .box{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .box.uu{
+            /* 字体大小 */
+            font-size: 40px;
+            /* 字重 */
+            font-weight: 100;
+            /* 风格 */
+            font-style: italic;
+            /* 行高 */
+            line-height: 200px;
+            /* 字体整体设计 字重 风格 大小/行高 字族(风格可以省略) */
+            font: 100 normal 40px/200px "STsong";
+        }
+        i{
+            /* normal清除系统字体风格 */
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="box uu">普通文本</div>
+    <i>i的文本</i>
+</body>
+</html>
