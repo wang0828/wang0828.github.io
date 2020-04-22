@@ -11,14 +11,39 @@
             background-color: darkgoldenrod;
         }
         .box{
-            /* block:块级标签 */
+            /* block:块级标签，独占一行，支持所有css样式 */
+            /* display: block; */
+            /* inline:内联（行级标签），同行显示，不支持宽高 */
+            /* display: inline; */
+            /* inline-block：内联块标签，同行显示，支持所有css样式 */
             display: inline-block;
+            /* 标签的嵌套规则 */
+            /* /* bolck可以嵌套所有显示类型标签，div | h1~h6 | p */
+
+            /* 注：hn与P属于文本类型标签，所以一般只嵌套inline标签 */ 
+
+            /* inline标签只能嵌套inline标签，span i b sup sub ins */
+
+            /* inline-block可以嵌套其他类型标签，但不建议嵌套任意类型标签 img | input | */
+        }
+        .b1{
+            height: 100px;
+        }
+        .b2{
+            height: 80px;
+        }
+        .b3{
+            height: 120px;
+        }
+        .box{
+            /* 文本基线对齐 */
+            vertical-align: baseline;
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box b1">123</div>
+    <div class="box b2">456</div>
+    <div class="box b3">789 789 789 789</div>
 </body>
 </html>
